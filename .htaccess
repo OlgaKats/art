@@ -1,6 +1,7 @@
-RewriteEngine On
+<IfModule mod_rewrite.c>
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ http://olgakats.ru/ [R=301,L]
+</IfModule>
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /phone/index\.html\ HTTP/
 RewriteRule ^phone/index\.html$ http://olgakats.ru/phone/ [R=301,L]
